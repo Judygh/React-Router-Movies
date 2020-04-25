@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Movie from "./Movies/Movie";
-
+import MovieList from './Movies/MovieList';
 import SavedList from "./Movies/SavedList";
+import { Route, Switch } from "react-router-dom";
+import './index.css';
 
 const App = () => {
   const [savedList, setSavedList] = useState([]);
